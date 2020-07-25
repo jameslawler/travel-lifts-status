@@ -25,6 +25,11 @@ const STATIONS = [
     stationName: "Sendlinger Tor",
     statusIds: ["Lift SE01", "Lift SE02", "Lift SE04"],
   },
+  {
+    stationId: "RS",
+    stationName: "Richard-Strauss-Str.",
+    statusIds: ["Lift RS02"],
+  },
 ];
 
 const generateSite = async () => {
