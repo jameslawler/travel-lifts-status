@@ -32,7 +32,7 @@ module.exports = (stations) => `
       ${stations
         .map(
           (station) => `<div class="station status--${
-            station.statusIds.some((statusId) => statusId.status === "open")
+            station.statusIds.every((statusId) => statusId.status === "open")
               ? "open"
               : "closed"
           }">
