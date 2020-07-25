@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Npm install
+      run: npm install
+      
+    - name: Build static site
+      run: npm run build
+      
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.1.1
+      with:
+        build_dir: build
