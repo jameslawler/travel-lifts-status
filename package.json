@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node src/build-static-site.js",
+    "list": "ls ./build",
     "test": "jest"
   },
   "repository": {
