@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"hello world\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node src/build-static-site.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/jameslawler/travel-lifts-status/issues"
   },
-  "homepage": "https://github.com/jameslawler/travel-lifts-status#readme"
+  "homepage": "https://github.com/jameslawler/travel-lifts-status#readme",
+  "devDependencies": {
+    "got": "^11.5.1",
+    "jest": "^26.1.0"
+  }
 }
