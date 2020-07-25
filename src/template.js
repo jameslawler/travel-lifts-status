@@ -42,6 +42,7 @@ module.exports = (stations) => `
         )
         .join("")}
     </div>
+    <span>Updated: ${new Date().toUTCString()}</span>
   </body>
 </html>
 `;
