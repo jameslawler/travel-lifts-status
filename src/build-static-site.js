@@ -3,7 +3,7 @@ const fs = require("fs");
 const stationStatus = require("./station-status");
 const template = require("./template");
 
-const BUILD_PATH = `${__dirname}\\..\\build\\index.html`;
+const BUILD_PATH = `${__dirname}/../build/index.html`;
 const STATIONS = [
   {
     stationId: "HO",
@@ -40,7 +40,7 @@ const build = async () => {
 };
 
 build().then(() => {
-  const files = fs.readdirSync(`${__dirname}\\..\\build`);
+  const files = fs.readdirSync(`${__dirname}/../build`);
   files.forEach((file) => console.log(`File name: ${file}`));
   console.log("finished generation");
 });
