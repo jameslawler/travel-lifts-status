@@ -40,5 +40,7 @@ const build = async () => {
 };
 
 build().then(() => {
+  const files = fs.readdirSync(`${__dirname}\\..\\build`);
+  files.forEach((file) => console.log(`File name: ${file}`));
   console.log("finished generation");
 });

@@ -17,9 +17,6 @@ jobs:
       - name: Build static site
         run: npm run build
 
-      - name: List files
-        run: npm run list
-
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.1.1
         with:
