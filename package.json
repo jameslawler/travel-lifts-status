@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jameslawler/travel-lifts-status#readme",
   "devDependencies": {
-    "got": "^11.5.1",
+    "got": "^11.8.5",
     "jest": "^26.1.0"
   }
 }
